@@ -1,0 +1,84 @@
+{
+  "info": {
+    "name": "Meal Calorie Backend"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"first_name\": \"John\", \"last_name\": \"Doe\", \"email\": \"john@example.com\", \"password\": \"Password123\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/auth/register",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"john@example.com\", \"password\": \"Password123\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/auth/login",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Calories",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"dish_name\": \"chicken biryani\", \"servings\": 2}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/get-calories",
+          "host": [
+            "http://localhost:8000"
+          ],
+          "path": [
+            "get-calories"
+          ]
+        }
+      }
+    }
+  ]
+}

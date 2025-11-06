@@ -1,0 +1,37 @@
+#===================================
+# Git Attributes for consistent line endings and diff settings
+# ===================================
+
+# Normalize line endings across Windows / Linux / macOS
+* text=auto eol=lf
+
+# Treat Python files as text
+*.py text diff=python
+
+# Treat JSON, YAML, Markdown, HTML as text
+*.json text
+*.yaml text
+*.yml text
+*.md text
+*.html text
+*.htm text
+*.css text
+*.js text
+
+# Treat binary files correctly
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Ensure environment files are treated as text
+*.env text
+
+# Improve diff readability for code files
+*.py linguist-language=Python
+*.sql linguist-language=SQL
